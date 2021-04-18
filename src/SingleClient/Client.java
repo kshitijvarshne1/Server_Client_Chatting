@@ -23,6 +23,14 @@ public class Client {
         PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
 
         Scanner sc = new Scanner(System.in);
+        String msg;
+        do{
+            msg= sc.nextLine();
+            out.println(msg);
+
+            String response= in.readLine();
+
+        }while(!msg.equals("exist"));
     }
 }
 
