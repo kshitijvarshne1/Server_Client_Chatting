@@ -29,8 +29,10 @@ public class Client {
             out.println(msg);
 
             String response= in.readLine();
+            System.out.println(response);
 
         }while(!msg.equals("exist"));
+
     }
 }
 
