@@ -31,8 +31,6 @@ public class Server {
             System.out.println("Client send :- "+msg);
             out.println("Server acknowledge this message :- "+msg);
         }while(!msg.equals("exist"));
-
-
     }
 }
 

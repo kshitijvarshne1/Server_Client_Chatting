@@ -32,7 +32,6 @@ public class Client {
             System.out.println(response);
 
         }while(!msg.equals("exist"));
-
     }
 }
 
