@@ -24,6 +24,13 @@ public class Server {
         BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
         PrintWriter out = new PrintWriter(client.getOutputStream(),true);
 
+        String msg=null;
+       do{
+           msg=in.readLine();
+           System.out.println("Cliend sent :- "+msg);
+           out.println("Server acknowledge this message"+msg);
+       }
+       while (!msg.equals("exist"));
     }
 }
 
