@@ -28,7 +28,7 @@ public class Server {
        do{
            msg=in.readLine();
            System.out.println("Cliend sent :- "+msg);
-           out.println("Server acknowledge this message"+msg);
+           out.println("Server acknowledge this message :- "+msg);
        }
        while (!msg.equals("exist"));
     }
